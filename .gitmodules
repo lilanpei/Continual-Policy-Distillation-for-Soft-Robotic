@@ -1,0 +1,9 @@
+[submodule "somo"]
+	path = somo
+	url = https://github.com/lilanpei/somo.git
+[submodule "somogym"]
+	path = somogym
+	url = https://github.com/lilanpei/somogym.git
+[submodule "somo-rl"]
+	path = somo-rl
+	url = https://github.com/lilanpei/somo-rl.git
