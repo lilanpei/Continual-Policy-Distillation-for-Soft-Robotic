@@ -26,19 +26,19 @@ In Knowledge Integration, demonstrations of the experts’ policies are asynchro
 This work contributes to the advancement of soft robotic manipulation by integrating RL and CL. By addressing the catastrophic forgetting problem and integrating knowledge from multiple RL agents, the developed soft robotic hand controller enables versatile and adaptive behaviours, facilitating the effective deployment of soft robotic systems in various scenarios.
 
 <center>
-<img src="imgs/Cumulative_Training_using_different_loss_functions.png" width="40%"/>
+<img src="imgs/Cumulative_Training_using_different_loss_functions.png" width="50%"/>
 </center>
 
 The approach offers advantages in terms of time efficiency, with significantly reduced training time compared to traditional online RL. By utilizing a limited-size memory buffer, memory efficiency is optimized while retaining important knowledge for learning.
 
 <center>
-<img src="imgs/performance_baselines.png" width="40%"/>
+<img src="imgs/performance_baselines.png" width="50%"/>
 </center>
 
 Overall, CPD provides a practical and efficient sequential learning framework to address the challenge of knowledge integration in complex manipulation tasks. It contributes to the advancement of learning-based control strategies for soft robotic systems within the paradigm of CL. CPD holds promise for developing intelligent and adaptive soft robotic hand controllers that continually acquire and retain knowledge, enabling them to perform a wide range of tasks effectively in several applications.
 
 <center>
-<img src="imgs/Comparison_of_replay-based_CL_strategies_with_variable_size_replay_buffer.png" width="40%"/>
+<img src="imgs/Comparison_of_replay-based_CL_strategies_with_variable_size_replay_buffer.png" width="50%"/>
 </center>
 
 ## How to use:
