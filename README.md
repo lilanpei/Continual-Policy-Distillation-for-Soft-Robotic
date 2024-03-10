@@ -46,11 +46,11 @@ Overall, CPD provides a practical and efficient sequential learning framework to
 ```
 python somo_rl/train_policy.py -e "InHandManipulationInverted-v0" -g "PPO_cube" -r "seed_0" -o
 ```
-2. Render a trained expert policy:
+2. Generate demonstrations from the trained expert controller:
 ```
 python somo_rl/post_processing/run_policy.py -e "InHandManipulationInverted-v0" -g "SAC" -r "seed_3" -m "best_model" --seed 103 -v -s -sv
 ```
-4. Distill knowledge from expert controllers:
+4. Distill knowledge from expert demonstrations:
 ```
 python somo_rl/continual_learning/behavior_cloning_avl_nothreshold.py -e1 "InHandManipulationInverted-nothreshold" -g1 "PPO_cube" -r1 "seed_1" -e2 "InHandManipulationInverted-nothreshold" -g2 "PPO_rect" -r2 "seed_6" -e3 "InHandManipulationInverted-nothreshold" -g3 "PPO_bunny" -r3 "seed_1" -e4 "InHandManipulationInverted-nothreshold"  -g4 "PPO_cross" -r4 "seed_0" -e5 "InHandManipulationInverted-nothreshold"  -g5 "PPO_teddy" -r5 "seed_6" --seed 101 -n 1 -stg Cumulative -nr 10
 ```
